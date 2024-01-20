@@ -45,7 +45,7 @@ const App : React.FC = () => {
         />
       </div>
       {loading && <div>Loading</div> }
-      {filteredCharacters.length > 0 ? (
+      {filteredCharacters.length > 0 && !loading? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-6">
           {filteredCharacters.map((character: any) => (
             <div key={character.id}>
