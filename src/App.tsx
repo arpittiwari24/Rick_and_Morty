@@ -44,7 +44,7 @@ const App : React.FC = () => {
         className="w-2/3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
         />
       </div>
-      {loading && <div>Loading</div> }
+      {loading && <div className="flex items-center justify-center">Loading</div> }
       {filteredCharacters.length > 0 && !loading? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-6">
           {filteredCharacters.map((character: any) => (
